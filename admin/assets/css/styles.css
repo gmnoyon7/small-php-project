@@ -1,0 +1,165 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+body {
+  padding-top: 50px;
+  background:#fff;
+  background-color: #f1f1f1;
+}
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fff;
+}
+
+img {
+	width:100%;
+}
+td img {
+	width:100px;
+}
+
+.mb {margin-bottom:50px;}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -33%;
+  }
+
+  .row-offcanvas-left.active {
+    left: 33%;
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 33%;
+    margin-left: 10px;
+  }
+}
+.relative {position:relative;}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -15px;
+  margin-bottom: 20px;
+  margin-left: -15px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a {
+  color: #fff;
+  background-color: #428bca;
+}
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+	position:relative;
+	z-index:1;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+/* edited css */
+.stk-limited {
+	background:#ff0000;
+	color:#fff;
+}
+.stk-out {
+	background:#000;
+	color:#fff;
+}
+.form-group {
+	overflow:hidden;
+}
+#checktotal {
+  display: inline;
+}
+.user-login {
+	margin-top:10%;
+}
+.admin-sidebar {
+	position: fixed;
+	top: auto;
+	left: 0;
+	width: 225px;
+	height: 100%;
+	background: #32373C;
+	z-index:99;
+}
+.admin-sidebar ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.admin-sidebar ul li {
+	display:block;
+	position:relative;
+}
+.admin-sidebar ul li a {
+	display: block;
+	padding: 10px;
+	color: #fff;
+	text-decoration:none;
+}
+.admin-sidebar ul li.active a {
+	background:#0073AA;
+}
+.admin-sidebar ul li a:hover {
+	background:#191E23;
+}
+.admin-sidebar ul li ul {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: 180px;
+	background: #32373C;
+	z-index: 99;
+	transition:.3s;
+	visibility:hidden;
+	opacity:0;
+}
+.admin-sidebar ul li:hover ul {
+	visibility:visible;
+	opacity:1;
+}
+.pagination li a {
+	background:#337ab7;
+	border-color:#2e6da4;
+	color:#fff;
+}
+.pagination li a:hover {
+	background:#286090;
+	color:#fff;
+	border-color:#2e6da4;
+}
+.retail-table tr td, .manufacture-table tr td {
+	vertical-align:middle !important;
+}
